@@ -14,7 +14,8 @@ function divide(a, b) {
     a / b;
 }
 
-const buttonsDiv = document.querySelector("#buttons-div");
+const numbersDiv = document.querySelector(".numbers-div");
+const operatorsDiv = document.querySelector(".operators");
 const display = document.querySelector("#display");
 
 let operator = 78;
@@ -41,23 +42,3 @@ function operate(a, b, op) {
         break;
     }
 }
-
-// assing the correct variable when the button is clicked
-
-buttonsDiv.addEventListener("click", (e) => {
-const clickedBtn = e.target.id;
-
-if (isFinite(clickedBtn)) {
-    if (operator === 78) {
-        num1 = arr[+clickedBtn];
-    } else {
-        num2 = arr[+clickedBtn];
-    }
-}
-
-display.textContent = num1;
-display.textContent += num2;
-})
-
-
-
