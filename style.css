@@ -1,0 +1,46 @@
+#whole-div {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#display {
+    border: 2px solid lightgreen;
+    background-color: lightblue;
+    width: 288px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.numsAndOps {
+    display: flex;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-content: center;
+}
+
+.numbers-div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 218px;
+    gap: 4px;
+    align-content: flex-start;
+    margin-right: 4px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    background-color: lightcoral;
+    border: 0;
+    font-size: 1.5em;
+}
