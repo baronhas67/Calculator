@@ -52,7 +52,6 @@ numbersDiv.addEventListener("click", (e) => {
         num1 += number;
         console.log("num1: " + num1);
     } else {
-
     display.textContent += number;
     num2 += number;
     console.log("two: " + num2);
@@ -62,21 +61,25 @@ numbersDiv.addEventListener("click", (e) => {
 operatorsDiv.addEventListener("click", (e) => {
     switch (e.target.id) {
         case "addB":
+            if (!(operator == 0)) calculateF();
             display.textContent += " + ";
             operator = "+";
         break;
 
         case "subtractB":
+            if (!(operator == 0)) calculateF();
             display.textContent += " - ";
             operator = "-";
         break;
 
         case "multiplyB":
+            if (!(operator == 0)) calculateF();
             display.textContent += " times ";
             operator = "*";
         break;
 
         case "divideB":
+            if (!(operator == 0)) calculateF();
             display.textContent += " / ";
             operator = "/";
         break;
@@ -91,7 +94,11 @@ operatorsDiv.addEventListener("click", (e) => {
     console.log(operator);
 })
 
-calculateB.addEventListener("click", () => {
+function calculateF() {
+    if (+num2 === 0) {
+        display.textContent = "Math Error";
+    } else {
+
     num1 = +num1;
     num2 = +num2;
     console.log(typeof num1, typeof num2);
@@ -100,4 +107,7 @@ calculateB.addEventListener("click", () => {
     num2 = 0;
     num1 = result;
     display.textContent = result;
-})
+    }
+}
+
+calculateB.addEventListener("click", calculateF);
