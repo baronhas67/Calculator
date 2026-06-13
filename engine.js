@@ -20,8 +20,8 @@ const display = document.querySelector("#display");
 const calculateB = document.querySelector("#calc");
 
 let operator = 0;
-let num1 = 0;
-let num2 = 0;
+let num1 = "";
+let num2 = "";
 const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let isClear = false;
 
@@ -50,8 +50,8 @@ numbersDiv.addEventListener("click", (e) => {
 
     if (isClear === true) {
         display.textContent = "";
-        num1 = 0;
-        num2 = 0;
+        num1 = "";
+        num2 = "";
         operator = 0;
         isClear = false;
     }
@@ -104,7 +104,7 @@ operatorsDiv.addEventListener("click", (e) => {
 })
 
 function calculateF() {
-    if (+num2 === 0 && operator === "/") {
+    if (num1 !== "" && +num2 === 0 && operator === "/") {
         display.textContent = "Math Error";
     } else {
 
@@ -113,7 +113,7 @@ function calculateF() {
     console.log(typeof num1, typeof num2);
 
     const result = operate(num1, num2, operator); 
-    num2 = 0;
+    num2 = "";
     num1 = result;
     operator = 0;
     display.textContent = result;
