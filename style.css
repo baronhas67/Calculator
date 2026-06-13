@@ -12,6 +12,12 @@
     background-color: rgb(153, 180, 172);
 }
 
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 #display {
     border: 4px solid grey;
     height: 100px;
