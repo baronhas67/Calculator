@@ -1,5 +1,7 @@
 # Calculator
 
+---s
+
 As the name suggests this is a very simple calculator. I did this project as the last project in the
 foundation course in "The Odin Project". 
 I have tried my best. 
