@@ -1,24 +1,31 @@
 # Calculator
 
----
+As the name suggests this is a very minimal and simple web based calculator. I build this project as the final
+project in the **foundation course** in "The Odin Project".
 
-As the name suggests this is a very simple calculator. I did this project as the last project in the
-foundation course in "The Odin Project". 
-I have tried my best. 
----
-This calculator can perform the very basic functions: 
--add
--subtract
--divide
--multiply
--A clear button
+I have put all my effort into this. I know that this is not the best but still. There may also be some errors,
+and _some_ unexpected behavior.
 
 ---
 
-With this I can move on to the next course in TOP, I am really _happy to finish this_.
+## Features
 
-### Huge thanks to "The Odin Project"
+These are the features:
+* **Addition** (`+`)
+* **Subtraction** (`-`)
+* **Multiplication** (`*`)
+* **Division** (`/`)
+* **Clear Button (`All Clear`)** to completely reset the calculator state and display.
+* **Error Handling:** Features basic prevention logic (such as stopping division by zero errors).
 
-### [Visit the page](https://baronhas67.github.io/Calculator/)
+### Credits
 
-#### Thank you! 
+A huge and special thanks to ["The Odin Project"](https://www.theodinproject.com/) for helping me learn web development.
+
+### Live demo
+
+You can view my project by clicking on this link:
+
+[Visit the webpage](https://baronhas67.github.io/Calculator/)
+
+#### Thank you for checking out my project!
